@@ -1,0 +1,28 @@
+{
+    "name": "R Package Dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "REditorSupport.r",
+                "RDebugger.r-debugger",
+                "posit.air-vscode"
+            ],
+            "settings": {
+                "r.rterm.linux": "/usr/bin/R",
+                "r.bracketedPaste": true,
+                "r.plot.useHttpgd": true,
+                "[r]": {
+                    "editor.tabSize": 2, // Indent with two spaces, but only for R
+                    "editor.insertSpaces": true,
+                    "editor.formatOnSave": true
+                },
+                "r.lsp.diagnostics": true
+            }
+        },
+        // "postCreateCommand": "R -e 'if (file.exists(\"renv.lock\")) renv::restore() else devtools::install_deps(dependencies = TRUE)'",
+        "remoteUser": "root"
+    }
+}

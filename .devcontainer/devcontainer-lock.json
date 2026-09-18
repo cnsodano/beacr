@@ -1,0 +1,9 @@
+{
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
+      "version": "1.2.4",
+      "resolved": "ghcr.io/rocker-org/devcontainer-features/r-rig@sha256:38f14bb238ee5e9ced77a4fe9375c459ca30fe32bd138480ed5eba62e1af4db2",
+      "integrity": "sha256:38f14bb238ee5e9ced77a4fe9375c459ca30fe32bd138480ed5eba62e1af4db2"
+    }
+  }
+}

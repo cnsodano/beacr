@@ -1,0 +1,7 @@
+define_parameter_type   Define extra parameters to use in Cucumber
+                        steps.
+hook                    Hooks
+opts                    cucumber Options
+run                     Run Cucumber tests in a 'testthat' context
+step                    Define a step
+test                    Run Cucumber tests

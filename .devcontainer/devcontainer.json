@@ -34,7 +34,7 @@
                 "posit.air-vscode"
             ],
             "settings": {
-                "r.rterm.linux": "/usr/bin/R",
+                "r.rterm.linux": "/usr/local/bin/R",
                 // turn these two on with Radian
                 // "r.rterm.linux": "/usr/local/bin/radian",
                 "r.bracketedPaste": true,

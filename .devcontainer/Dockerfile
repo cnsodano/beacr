@@ -25,7 +25,8 @@ RUN apt-get update && apt-get install -y \
     libwebp-dev  \ 
     libx11-dev \ 
     # build-essential \ 
-    locales \ # To suppress LC_* warnings
+    # To suppress LC_* warnings
+    locales \ 
     && rm -rf /var/lib/apt/lists/*
 
 # Set the default command when the container starts

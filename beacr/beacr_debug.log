@@ -1,18 +1,18 @@
-INFO [2026-09-18 15:29:39] || .inform || strictness:0 || <message/rlang_message>
+INFO [2026-09-18 16:26:22] || .inform || strictness:0 || <message/rlang_message>
 Message:
 beacr: Creating debug log folder at: /workspaces/beacr/beacr
 Calling rlang::inform...
 
 
 namespace: beacr || Log signal type: INFO 
-[2026-09-18 15:29:39]: || .inform || strictness:0 || <message/rlang_message>
+[2026-09-18 16:26:22]: || .inform || strictness:0 || <message/rlang_message>
 Message:
 beacr: Seed log default location is: /workspaces/beacr/beacr
 Calling rlang::inform...
 
 
 namespace: beacr || Log signal type: INFO 
-[2026-09-18 15:29:39]: || .inform || strictness:0 || <message/rlang_message>
+[2026-09-18 16:26:22]: || .inform || strictness:0 || <message/rlang_message>
 Message:
 beacr fully loaded!
 Calling rlang::inform...

@@ -3,5 +3,32 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+
+        {
+            "type": "R-Debugger",
+            "name": "Debug R-Package",
+            "request": "launch",
+            "debugMode": "workspace",
+            "workingDirectory": "${workspaceFolder}",
+            "includePackageScopes": true,
+            "loadPackages": [
+                "."
+            ]
+        },
+                {
+                    "type": "R-Debugger",
+                    "name": "Debug Package but function",
+                    "request": "launch",
+                    "debugMode": "function",
+                    "workingDirectory": "${workspaceFolder}",
+                    "file": "${file}",
+                    "mainFunction": "${function}",
+                    "includePackageScopes": true,
+                    "loadPackages": [
+                        "."
+                    ],
+                    "allowGlobalDebugging": false
+                },
+    ]
 }

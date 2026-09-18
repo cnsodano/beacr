@@ -32,6 +32,11 @@ RUN apt-get update && apt-get install -y \
 # Set the default command when the container starts
 CMD ["/bin/bash"]
 
+RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
+
+RUN R -e 'renv::status()' 
+# renv::restore()? 
+
 # COPY .devcontainer/.Rprofile /home/ubuntu/.Rprofile
 # Core dev tooling
 # RUN install.r devtools remotes usethis testthat roxygen2 languageserver httpgd renv

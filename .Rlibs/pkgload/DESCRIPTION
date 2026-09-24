@@ -39,10 +39,10 @@ Author: Hadley Wickham [aut],
 Maintainer: Lionel Henry <lionel@posit.co>
 Repository: CRAN
 Date/Publication: 2026-06-15 15:00:11 UTC
-Built: R 4.5.2; ; 2026-09-17 23:50:41 UTC; unix
+Built: R 4.5.2; ; 2026-09-18 16:37:20 UTC; unix
 RemoteType: standard
-RemotePkgRef: pkgload@1.5.3
-RemoteRef: pkgload@1.5.3
+RemotePkgRef: pkgload
+RemoteRef: pkgload
 RemoteRepos: https://cloud.r-project.org
 RemotePkgPlatform: source
 RemoteSha: 1.5.3

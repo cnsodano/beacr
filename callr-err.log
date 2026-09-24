@@ -1,0 +1,15 @@
+Loading required package: usethis
+
+Attaching package: ‘testthat’
+
+The following object is masked from ‘package:devtools’:
+
+    test_file
+
+ℹ Loading beacr
+beacr: Creating debug log folder at: /workspaces/beacr/beacr
+
+beacr: Seed log default location is: /workspaces/beacr/beacr
+
+beacr fully loaded!
+

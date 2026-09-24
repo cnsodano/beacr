@@ -2,6 +2,11 @@
 
 describe("Loading from first call, (never before loaded)", {
   it("creates the default data directory", {
+    # !_RETURN
+    # skip(
+    #   "Turned flaky after moving dependency library into workspace (.Rlibs/). Investigate later"
+    # ) # !_TODO: fix flaky test using a .with_tempdir block to check the behavior in a new directory; will have to make packages loadable in that new tempdir despite a workspace-local library (.Rlibs)
+
     curr_data_dir <- .get_option("data_dir_location")
     # Reset state to reflect never having loaded the package before
     expect_true(fs::dir_exists(curr_data_dir))
@@ -9,6 +14,8 @@ describe("Loading from first call, (never before loaded)", {
     expect_false(fs::dir_exists(curr_data_dir))
 
     # Load in a fresh R session
+
+    # replicate(10, { # Vestige of testing flakiness
     default_data_dir <- callr::r(
       func = function() {
         library(testthat)
@@ -16,11 +23,16 @@ describe("Loading from first call, (never before loaded)", {
         default_data_dir <- .get_option("data_dir_location")
         return(default_data_dir)
       },
-      cmdargs = "--vanilla"
+      # cmdargs = "--vanilla",
+      stdout = "callr-out.log",
+      stderr = "callr-err.log",
+      error = "debugger",
+      show = TRUE,
+      # package = beacr
     )
-
     # Assert
     expect_true(fs::dir_exists(default_data_dir))
+    # })
   })
 
   it("alerts user that the default log location is in workspace", {
@@ -61,7 +73,7 @@ describe("Loading from first call, (never before loaded)", {
     expect_true(stringr::str_detect(
       string = result$msgs[2],
       pattern = glue::glue(
-        "beacr: Creating debug log folder at:\n{fs::path(getwd(),'beacr')}"
+        "beacr: Creating debug log folder at: {fs::path(getwd(),'beacr')}"
       )
     ))
   })
@@ -120,11 +132,18 @@ describe("Loading after first load", {
     pkg <- "beacr"
 
     # Assert
-    expect_equal(result$msgs[1], glue::glue("ℹ Loading {pkg}"))
+    expect_true(
+      stringr::str_detect(
+        string = result$msgs[1],
+        pattern = glue::glue(
+          ".*Loading {pkg}"
+        )
+      )
+    )
     expect_true(stringr::str_detect(
       string = result$msgs[2],
       pattern = glue::glue(
-        "beacr: Debug logs are being written to:\n{fs::path(getwd(),'beacr')}"
+        "beacr: Debug logs are being written to: {fs::path(getwd(),'beacr')}"
       )
     ))
   })

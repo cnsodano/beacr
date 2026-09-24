@@ -4,9 +4,6 @@
 .httr-oauth
 .DS_Store
 .quarto
-.R_libs/
 docs
 inst/doc
-_todo.md
-todo.md
 **/.quarto/

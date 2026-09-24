@@ -38,7 +38,7 @@
                 // turn these two on with Radian
                 // "r.rterm.linux": "/usr/local/bin/radian",
                 "r.bracketedPaste": true,
-                "r.plot.useHttpgd": true,
+                //"r.plot.useHttpgd": true,
                 "[r]": {
                     "editor.tabSize": 2, // Indent with two spaces, but only for R
                     "editor.insertSpaces": true,

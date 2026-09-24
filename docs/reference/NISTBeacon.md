@@ -70,7 +70,7 @@ has been tampered with after the fact.
 
 ## Super class
 
-[`BeaconInterface`](https://github.com/cnsodano/beacr-pre-alpha/reference/BeaconInterface.md)
+[`BeaconInterface`](https://github.com/cnsodano/beacr-alpha/reference/BeaconInterface.md)
 -\> `NISTBeacon`
 
 ## Public fields
@@ -143,8 +143,8 @@ has been tampered with after the fact.
 
 Inherited methods
 
-- [`BeaconInterface$is_valid_hash()`](https://github.com/cnsodano/beacr-pre-alpha/reference/BeaconInterface.html#method-is_valid_hash)
-- [`BeaconInterface$resolve_hash_function()`](https://github.com/cnsodano/beacr-pre-alpha/reference/BeaconInterface.html#method-resolve_hash_function)
+- [`BeaconInterface$is_valid_hash()`](https://github.com/cnsodano/beacr-alpha/reference/BeaconInterface.html#method-is_valid_hash)
+- [`BeaconInterface$resolve_hash_function()`](https://github.com/cnsodano/beacr-alpha/reference/BeaconInterface.html#method-resolve_hash_function)
 
 ------------------------------------------------------------------------
 

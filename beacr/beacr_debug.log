@@ -18,3 +18,630 @@ beacr fully loaded!
 Calling rlang::inform...
 
 
+INFO [2026-09-24 15:27:46] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 15:27:46]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 15:27:46]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 16:43:13] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:43:13]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:43:13]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:45:46]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+ℹ Did not detect a seed log file. Writing one to `/workspaces/beacr/beacr/seed_log.json`
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: DEBUG 
+[2026-09-24 16:45:46]: || .debug ||  strictness:0 || <message/beacr.debug>
+Message:
+Object `4E86117C2C6558A9B5E05E2A3E33C17ECA07252C70B48354C158FFCB741A1976A312789B2398BC895AFD077121C335705C78A7F4CA213628B743A1FB1B523B88` is not a raw byte object. Attempting to automatically convert...
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: ERROR 
+[2026-09-24 16:45:46]: || .error || strictness:0 || <error/beacr.PreregistrationNotFoundError>
+Error:
+! During check for preregistration:
+  preregistration_identifier was NULL
+  preregistration_source was OSF
+Calling rlang::abort...
+
+
+namespace: beacr || Log signal type: ERROR 
+[2026-09-24 16:45:46]: || .nonstopping_fail ||  strictness:0 || <message/beacr.nonstopping_fail>
+Message:
+✖ No preregistration identifier passed, using pulse without preregistration. See the 'Preregistration' section in the Getting Started vignette for
+  more details: `vignette('beacr')`
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:45:46]: || .success ||  strictness:0 || <message/beacr.success>
+Message:
+✔ Pulse successfully acquired. Details written to log at /workspaces/beacr/beacr/seed_log.json
+Calling rlang::inform...
+
+
+INFO [2026-09-24 16:48:11] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:48:11]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:48:11]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 16:48:13] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:48:13]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:48:13]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 16:50:23] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:50:23]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:50:23]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 16:50:25] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:50:25]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:50:25]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 16:50:43] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:50:43]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:50:43]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 16:58:06] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:58:06]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 16:58:06]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:03:07] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:03:07]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:03:07]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:06:49] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:06:49]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:06:49]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: ERROR 
+[2026-09-24 17:07:47]: || .error || strictness:0 || <error/rlang_error>
+Error:
+! Value to hash was identified as a hex string but the length did not match the expected hash length, namely value length =
+  `128` hex characters, corresponding to `64` bytes, while the current hash length is set to `511` bits, or `63.875` bytes
+Calling rlang::abort...
+
+
+INFO [2026-09-24 17:11:27] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:11:28]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:11:28]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:11:30] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:11:30]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:11:30]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:11:55] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:11:55]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:11:55]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:20:23] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:20:23]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:20:23]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:21:08] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:21:08]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:21:08]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:21:10] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:21:10]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:21:10]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:21:40] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:21:40]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:21:40]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:25:26] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:25:26]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:25:26]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:26:08] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:26:08]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:26:08]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:26:10] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:26:10]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:26:10]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:26:30] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:26:30]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:26:30]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:28:48] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:28:48]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:28:48]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:29:03] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:29:03]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:29:03]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:29:04] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:29:05]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:29:05]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:29:24] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:29:24]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:29:24]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:07]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:07]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:07]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:31:25] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:25]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:25]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:31:26] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:27]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:27]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+
+INFO [2026-09-24 17:31:45] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:45]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/beacr/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-09-24 17:31:45]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+

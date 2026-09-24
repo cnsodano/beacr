@@ -15,5 +15,6 @@
         "window.inactiveBorder": "#3d435d"
     },
     "local-comment.storage.commentsConfig": "comments.json",
-    "local-comment.storage.bookmarksConfig": "bookmarks.json"
+    "local-comment.storage.bookmarksConfig": "bookmarks.json",
+    "r.lsp.diagnostics": false
 }

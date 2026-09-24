@@ -9,14 +9,14 @@
         "ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
             // See: https://github.com/rocker-org/devcontainer-features/blob/main/src/r-apt/README.md#options
             //
-            "version": "4.5.2"
+            "version": "4.5.2",
             // Use RSupport (incl languageserver and httpgd) spand bspm
             // "vscodeRSupport": "full",
             // "installBspm": true,  // leftover from using the r-apt feature
             //
             // You can add each of these individually or jointly. See the table at
             // https://github.com/rocker-org/devcontainer-features/blob/main/src/r-apt/README.md#options
-            // "installRadian": true,
+            "installRadian": true
             // "installREnv": true,
             // I am going to handle installing all R packages after the build to be able to pin the versions via renv, so I disable these 
             // "installDevTools": false,
@@ -29,14 +29,15 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "REditorSupport.r",
-                "RDebugger.r-debugger",
-                "posit.air-vscode"
+                "reditorsupport.r",
+                "rdebugger.r-debugger",
+                "posit.air-vscode",
+                "reditorsupport.r-syntax"
             ],
             "settings": {
-                "r.rterm.linux": "/usr/local/bin/R",
+                // "r.rterm.linux": "/usr/local/bin/R",
                 // turn these two on with Radian
-                // "r.rterm.linux": "/usr/local/bin/radian",
+                "r.rterm.linux": "/usr/local/bin/radian",
                 "r.bracketedPaste": true,
                 //"r.plot.useHttpgd": true,
                 "[r]": {

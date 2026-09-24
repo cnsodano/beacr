@@ -128,16 +128,12 @@
 #'
 #'
 #' @examples
-#' .hex_str_to_raw("00")
-#' #> [1] 00
-#' .hex_str_to_raw("FF")
-#' #> [1] ff
+#' beacr:::.hex_str_to_raw("00", 8)
+#'
+#' beacr:::.hex_str_to_raw("FF", 8)
 #'
 #' # More realistically,
-#' .hex_str_to_raw("1C63CAF668ADC6E5B97903164EF5AE6DF7570F1AC76176F9B2703BAEA77F1295A63683B63D5AD08CC9E3E5A4D7E3D25C7DE1C31377F37212B7047560A94CBBA2")
-#' #> [1] 1c 63 ca f6 68 ad c6 e5 b9 79 03 16 4e f5 ae 6d f7 57 0f 1a c7 61 76 f9 b2 70 3b ae a7 7f
-#' #> [31] 12 95 a6 36 83 b6 3d 5a d0 8c c9 e3 e5 a4 d7 e3 d2 5c 7d e1 c3 13 77 f3 72 12 b7 04 75 60
-#' #> [61] a9 4c bb a2
+#' beacr:::.hex_str_to_raw("1C63CAF668ADC6E5B97903164EF5AE6DF7570F1AC76176F9B2703BAEA77F1295A63683B63D5AD08CC9E3E5A4D7E3D25C7DE1C31377F37212B7047560A94CBBA2", 512)
 #'
 #'
 .hex_str_to_raw <- function(hex_str, bits) {

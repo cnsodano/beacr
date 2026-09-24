@@ -63,7 +63,7 @@ Future directions for new Beacons
 A major limitation of the current alpha version of `beacr` is relying on
 only one randomness beacon. The developers of NIST’s beacon themselves
 suggest that mixing (or
-*[`beacr::swirl`](https://github.com/cnsodano/beacr-pre-alpha/reference/swirl.md)ing*)
+*[`beacr::swirl`](https://github.com/cnsodano/beacr-alpha/reference/swirl.md)ing*)
 beacons together provide a more robust seed generation method in the
 event that any one beacon becomes unreliable. In future versions, I hope
 to implement additional beacons, and I welcome contributions to this

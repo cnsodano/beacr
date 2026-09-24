@@ -2,7 +2,7 @@
 
 Currently this is a placeholder; when called it will perform the exact
 same behavior as
-[get_seed](https://github.com/cnsodano/beacr-pre-alpha/reference/get_seed.md).
+[get_seed](https://github.com/cnsodano/beacr-alpha/reference/get_seed.md).
 In the future when multiple beacons are implemented, this function will
 combine multiple beacons together.
 
@@ -14,4 +14,4 @@ swirl(...)
 
 ## See also
 
-[get_seed](https://github.com/cnsodano/beacr-pre-alpha/reference/get_seed.md)
+[get_seed](https://github.com/cnsodano/beacr-alpha/reference/get_seed.md)

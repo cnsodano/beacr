@@ -1,7 +1,7 @@
 # beacr
 
 Check out the full documentation at the `beacr` package website
-[here](https://cnsodano.github.io/beacr-pre-alpha/)
+[here](https://cnsodano.github.io/beacr-alpha/)
 
 `beacr` (pronounced ‘beaker’
 ([/ˈbiːkɚ/](https://speecher.org/?text=beaker))) improves the
@@ -34,7 +34,7 @@ result. Reproduce: Re-running the analysis script re-collects the seed
 used by querying the randomness beacon and the Open Science Framework
 again, reconstructing the random seed, and re-seeding the analysis. Once
 the result is produced and matches the original output, results are
-confirmed.](reference/figures/beacr_flowchart.png)](https://github.com/cnsodano/beacr-pre-alpha/man/figures/beacr_flowchart.png)
+confirmed.](reference/figures/beacr_flowchart.png)](https://github.com/cnsodano/beacr-alpha/man/figures/beacr_flowchart.png)
 
 Typical use cases of `beacr` may be:
 
@@ -60,7 +60,6 @@ directly from GitHub using `pak`(recommended), `remotes`, or
 #### pak
 
 ``` r
-
 # install.packages("pak")
 pak::pak("cnsodano/beacr-pre-alpha")
 ```
@@ -68,7 +67,6 @@ pak::pak("cnsodano/beacr-pre-alpha")
 #### remotes
 
 ``` r
-
 # install.packages("remotes")
 remotes::install_github("cnsodano/beacr-pre-alpha")
 ```
@@ -76,7 +74,6 @@ remotes::install_github("cnsodano/beacr-pre-alpha")
 #### devtools
 
 ``` r
-
 # install.packages("devtools")
 devtools::install_github('cnsodano/beacr-pre-alpha')
 ```
@@ -86,7 +83,6 @@ devtools::install_github('cnsodano/beacr-pre-alpha')
 ### Typical usage pattern
 
 ``` r
-
 library(beacr)
 seed = beacr::get_seed()
 set.seed(seed)
@@ -94,7 +90,7 @@ set.seed(seed)
 ```
 
 See
-[`vignette("beacr")`](https://github.com/cnsodano/beacr-pre-alpha/articles/beacr.md)
+[`vignette("beacr")`](https://github.com/cnsodano/beacr-alpha/articles/beacr.md)
 for more examples of typical usage patterns
 
 ### Preregistrations and Publicly Verifiable random sampling
@@ -115,7 +111,6 @@ registration and `beacr` will perform a verification check that covers
 the timestamp and file integrity of that registration.
 
 ``` r
-
 library(beacr)
 seed = beacr::get_seed(
   preregistration_identifier = "https://osf.io/yrp3f/files/4gzvx",

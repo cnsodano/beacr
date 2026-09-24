@@ -1,22 +1,11 @@
-PRIO
-- [ ] making sure I can build and push and deploy/change the github pkg and pkgdown site, and its still downloadable
-- [ ] updating an FAQ site / etc (MAKE SURE I REFERENCE MY OBS PROJ SITE TO KNOW WHAT I SHOULD DO NEXT)
+- [ ] make sure that pkgdown build site now has the right hexstrtoraw exmaple. the issue was i wasn't runnign devtools::document()
+- [ ] overhaul the getting started page to make it much simpler language. link to a more techie getting started page. change the text outputted to be either 1) simpler language or 2) default to quiet mode (varying levels: default is level 1 but you can set to level 0 which is no output unless error. level 2 is the mode it currently is in now) 
+    - [ ] examples on pkgdown page for get_seed, reset_seed, etc
 
 
-LOW PRIO
-- [ ] find a way to run the tests in the terminal that skips the output
-- [ ] ensure ?beacr and etc works 
-- [ ] switch to radian in devcontainer.json
-- [ ] redownload pkgs with "--with-keep-source" for debugging stepping into library code? 
+- [ ] set_seed function to do all in one fell swoop 
+- [ ] install formatR pkg for dev dependency for formatting rmarkdown chunks 
 
 
-
-TESTS
-- [ ] how to do this "simulate loading/installing beacr for the first time in a tempdir and sep R process using callr" 
-
-
-
-LOW PRIO:
-- [ ] for the 'creates data dir' test what I should do is IN A TEMP DIR, load it (i may have to append the path to the outside location in order to load it but then do that) and then check for new dir, put the expectation IN THE WITHTEMPDIR BLOCK!
-- [ ] add vscDebugger to container build process
-- [ ] vscDebugg
+remove all public #_RETURN's like in the NISTBEacon doc page 
+- change my 'usage' for the functions to have an example output as well

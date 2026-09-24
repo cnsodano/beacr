@@ -24,7 +24,6 @@ the results of the experiment. In this case, the ‘small change’ would be
 adding the word ‘not’
 
 ``` r
-
 # Hashing a toy example preregistration
 openssl::sha256("There will be a significant effect of x on y")
 #> [1] "e001e026df1b099d5470dabf04d23c84948ed3608238cd1254be9994ff3964da"
@@ -33,7 +32,6 @@ openssl::sha256("There will be a significant effect of x on y")
 Compared to:
 
 ``` r
-
 # Changing the content even slightly results in a completely different output
 openssl::sha256("There will not a significant effect of x on y")
 #> [1] "c40d41dd75ddc8a9169e9869a6fbb315aa3eec84244e2bcee3d9b8df5dc8a945"
@@ -48,17 +46,21 @@ bit of randomness and the rest of the input is completely determined by
 our preregistration:
 
 ``` r
-
 # Hashing a toy example preregistration
-preregistration = openssl::sha256("I am very interested in manipulating the output to result in a seed I desire")
+preregistration = openssl::sha256(
+  "I am very interested in manipulating the output to result in a seed I desire"
+)
 
-# The toy case where the preregistration has the MOST opportunity for influence
-# possible; there is only a single bit that is NOT pre-determined
-dummy_pulse1 = as.raw(0)
+# The toy case where the preregistration has the MOST opportunity for 
+# influence possible; there is only a single bit that is NOT pre-determined
+dummy_pulse1 = as.raw(0) 
 
-# Custom helper converts datatypes to raw before concatenating to avoid
+# Custom helper converts datatypes to raw before concatenating to avoid 
 # coercion
-concatenated = c(beacr:::.hex_str_to_raw(preregistration, bits = 256), dummy_pulse1)
+concatenated = c(
+  beacr:::.hex_str_to_raw(preregistration, bits = 256),
+  dummy_pulse1
+)
 
 resulting_seed = openssl::sha512(concatenated)
 resulting_seed
@@ -69,13 +71,15 @@ Note that when the single bit of randomness offered by the dummy pulse
 changes, we get a completely different outcome
 
 ``` r
-
 # When changing a single bit (flipping the dummy pulse from 0 to 1)
-dummy_pulse2 = as.raw(1)
+dummy_pulse2 = as.raw(1) 
 
 # Custom helper converts datatypes to raw before concatenating to avoid
 # coercion
-concatenated = c(beacr:::.hex_str_to_raw(preregistration, bits = 256), dummy_pulse2)
+concatenated = c(
+  beacr:::.hex_str_to_raw(preregistration, bits = 256),
+  dummy_pulse2
+)
 
 resulting_seed = openssl::sha512(concatenated)
 resulting_seed

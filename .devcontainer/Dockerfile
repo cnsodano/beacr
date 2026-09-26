@@ -1,11 +1,16 @@
 # Specify the latest Ubuntu base image
-FROM ubuntu:latest
+FROM rocker/r-ver:4.5.2
 
 # Prevent interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
-
-# Update system packages and install dependencies
-RUN apt-get update && apt-get install -y \
+ENV RENV_PATHS_LIBRARY=/workspaces/beacr/.Rlibs 
+ENV RENV_PATHS_LIBRARY_ROOT=/workspaces/beacr/.Rlibs
+ENV RENV_CONFIG_PAK_ENABLED=TRUE
+# Update system packages and install dependencies. cache the 
+RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    --mount=type=cache,target=/var/lib/apt/lists,sharing=locked \
+    rm -f /etc/apt/apt.conf.d/docker-clean && \
+    apt-get update && apt-get install -y \
     # System libraries many R packages need 
     curl \
     git \
@@ -34,7 +39,7 @@ CMD ["/bin/bash"]
 
 RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 
-RUN R -e 'renv::status()' 
+# RUN R -e 'renv::status()' 
 # renv::restore()? 
 
 # COPY .devcontainer/.Rprofile /home/ubuntu/.Rprofile

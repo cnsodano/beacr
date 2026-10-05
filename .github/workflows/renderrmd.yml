@@ -2,7 +2,7 @@ name: Render RMarkdown
 
 on:
   workflow_dispatch:
-    
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -15,16 +15,18 @@ jobs:
         with:
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            any::rmarkdown
-            any::knitr
-            any::devtools
-            any::usethis
+      - uses: r-lib/actions/setup-renv@v2
+
+    #   - uses: r-lib/actions/setup-r-dependencies@v2
+    #     with:
+    #       packages: |
+    #         any::rmarkdown
+    #         any::knitr
+    #         any::devtools
+    #         any::usethis
 
       - name: Render
-        run: Rscript --vanilla -e 'rmarkdown::render("report.Rmd")'
+        run: Rscript -e 'rmarkdown::render("report.Rmd")'
 
       - name: Commit and Push Results
         run: |

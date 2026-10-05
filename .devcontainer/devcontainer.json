@@ -12,7 +12,8 @@
             "rdebugger.r-debugger",
             "posit.air-vscode",
             "reditorsupport.r-syntax",
-            "ms-vscode.live-server"
+            "ms-vscode.live-server",
+            "github.vscode-github-actions"
         ],
         "settings": {
             "r.lsp.debug": true,

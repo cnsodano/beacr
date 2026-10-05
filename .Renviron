@@ -1,1 +1,2 @@
-RENV_PATHS_LIBRARY = /workspaces/beacr/.Rlibs/
+RENV_PATHS_CACHE=/workspaces/beacr_test_nortools/.renvcache/
+RENV_CONFIG_PAK_ENABLED=TRUE

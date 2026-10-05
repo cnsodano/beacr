@@ -1,1 +1,0 @@
-setup_object <- "setup"

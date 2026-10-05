@@ -1,5 +1,5 @@
 
-# beacr <img src="man/figures/logo_large.png" height="120" />
+# <img src="man/figures/logo_large.png" height="120" />
 Check out the full documentation at the `beacr` package website [here](https://cnsodano.github.io/beacr-alpha/)
 
 `beacr` (pronounced ‘beaker’

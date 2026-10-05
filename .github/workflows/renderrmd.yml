@@ -1,0 +1,40 @@
+name: Render RMarkdown
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::rmarkdown
+            any::knitr
+            any::devtools
+            any::usethis
+
+      - name: Render
+        run: Rscript --vanilla -e 'rmarkdown::render("report.Rmd")'
+
+      - name: Commit and Push Results
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-rendered RMarkdown [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi

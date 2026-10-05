@@ -10,6 +10,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     rm -f /etc/apt/apt.conf.d/docker-clean && \
     apt-get update && apt-get install -y \
     git \
+    libgit2-dev \
     vim \ 
     curl \
     cmake \

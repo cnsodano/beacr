@@ -1,0 +1,55 @@
+---
+title: "My First R Markdown"
+author: "Your Name"
+date: "2026-10-05"
+output: html_document
+---
+
+## Introduction
+
+This is a basic example of an **R Markdown** document. You can easily format text with *italics*, **bold**, or insert [links](https://rmarkdown.rstudio.com). 
+
+Here is a quick bulleted list of features:
+* Easy formatting
+* Embedded code
+* Automatic report generation
+
+## Data Analysis
+
+Below, we embed an R code chunk. It calculates a summary of the built-in `cars` dataset and prints the results directly into our final report.
+```{r spec-seed-chunk}
+flip <- function(n){
+    return(sample(c("H", "T"), n, replace = TRUE))
+}
+
+set.seed(4623119)
+flip(10)
+
+```
+
+```{r beacr-flip-chunk}
+devtools::load_all()
+seed = beacr::get_seed()
+set.seed(seed)
+flip(10)
+
+```
+
+```{r osfr-chunk}
+anes_project <- osfr::osf_retrieve_node("https://osf.io/jgyxm")
+anes_project_ = osfr::osf_download(osfr::osf_ls_files(anes_project)[4, ], conflict="skip")
+
+csv_path = anes_project_[["local_path"]]
+
+df = read.csv(csv_path)
+
+summary(df)
+```
+
+## Data Visualization
+
+We can also include plots. The chunk options `echo=FALSE` tells R Markdown to hide the code itself and only display the resulting graph.
+
+```{r plot-chunk, echo=FALSE}
+plot(cars, main = "Speed vs. Stopping Distance")
+```

@@ -1,5 +1,5 @@
 
-# <img src="man/figures/logo_large.png" height="120" />
+# <img src="man/figures/logo.png" height="120" />
 Check out the full documentation at the `beacr` package website [here](https://cnsodano.github.io/beacr-alpha/)
 
 `beacr` (pronounced ‘beaker’
@@ -143,16 +143,4 @@ manual](https://doi.org/10.6028/NIST.IR.8213-draft)
     is to prevent people from locally running their analyses every
     minute/day until they get a random pulse with a seed that works for
     their desired narrative and then selectively reporting that outcome.
-2.  The hexsticker logo I am currently using is AI generated and is a
-    placeholder while I work with a North Carolina based artist to
-    create an original logo. To my knowledge there is no way for me to
-    interrogate the provenance of reference images used by currently
-    available commercial generative AI tools, and while I’ve made
-    efforts to reverse image search it is possible that the final
-    produced image is substantially similar to original work previously
-    published on the internet. If you are an artist and believe this
-    logo is plagiarizing your work, **please reach out** and I will take
-    it down. Likewise for any art used to generate the flowchart diagram
-    above; I am still thinking about the best way to publicly organize
-    credit to icon artists whose work I’ve used. I expect to have a
-    satisfactory solution by the first release (v0.1.0)
+2.  The hexsticker logo was designed in collaboration with and drawn by Jessica Zhong. I am aware that it looks like a flask and not a beaker. Maybe I will change it in the future. 

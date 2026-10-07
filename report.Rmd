@@ -45,6 +45,13 @@ df = read.csv(csv_path)
 
 summary(df)
 ```
+```{r my-proj-chunk}
+
+myproj = osfr::osf_retrieve_node("https://osf.io/mbcw5/")
+myproj_ = osfr::osf_ls_files(myproj)
+df = osfr::osf_download(myproj_, conflict="skip")
+
+```
 
 ## Data Visualization
 

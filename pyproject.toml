@@ -1,7 +1,6 @@
 [project]
-name = "randomnessbeacon"
-version = "0.1.0"
-description = "Add your description here"
+name = "beacr"
+version = "0.0.9000"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

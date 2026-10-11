@@ -14,7 +14,6 @@
   "snapshot.type": "implicit",
   "use.cache": false,
   "vcs.ignore.cellar": true,
-  "vcs.ignore.library": false,
   "vcs.ignore.local": true,
   "vcs.manage.ignores": true
 }

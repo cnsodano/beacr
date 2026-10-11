@@ -564,3 +564,23 @@ beacr fully loaded!
 Calling rlang::inform...
 
 
+INFO [2026-10-11 21:26:56] || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Debug logs are being written to: /workspaces/randomnessbeacon-private/vignettes/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-10-11 21:26:57]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr: Seed log default location is: /workspaces/randomnessbeacon-private/vignettes/beacr
+Calling rlang::inform...
+
+
+namespace: beacr || Log signal type: INFO 
+[2026-10-11 21:26:57]: || .inform || strictness:0 || <message/rlang_message>
+Message:
+beacr fully loaded!
+Calling rlang::inform...
+
+

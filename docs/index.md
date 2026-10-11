@@ -1,4 +1,4 @@
-# beacr
+# 
 
 Check out the full documentation at the `beacr` package website
 [here](https://cnsodano.github.io/beacr-alpha/)
@@ -34,7 +34,7 @@ result. Reproduce: Re-running the analysis script re-collects the seed
 used by querying the randomness beacon and the Open Science Framework
 again, reconstructing the random seed, and re-seeding the analysis. Once
 the result is produced and matches the original output, results are
-confirmed.](reference/figures/beacr_flowchart.png)](https://github.com/cnsodano/beacr-alpha/man/figures/beacr_flowchart.png)
+confirmed.](reference/figures/updated_flowchart.png)](https://github.com/cnsodano/beacr-alpha/man/figures/updated_flowchart.png)
 
 Typical use cases of `beacr` may be:
 
@@ -49,7 +49,7 @@ Typical use cases of `beacr` may be:
 `beacr` seeks to help eliminate the possibility for ‘**seed-hacking**’,
 a type of ‘p-hacking’ where you change the random seed used in a
 stochastic algorithm until the result of running that algorithm matches
-your hypothesis[^1]
+your hypothesis[¹](#fn1)
 
 ## Installation
 
@@ -158,6 +158,8 @@ manual](https://doi.org/10.6028/NIST.IR.8213-draft)
     credit to icon artists whose work I’ve used. I expect to have a
     satisfactory solution by the first release (v0.1.0)
 
-[^1]: For a toy example of seed-hacking ML model training, see [this
+------------------------------------------------------------------------
+
+1.  For a toy example of seed-hacking ML model training, see [this
     notebook](https://github.com/Jason2Brownlee/MachineLearningMischief/blob/main/examples/seed_hacking_cross_validation.md)
     by [Jason Brownlee](https://github.com/Jason2Brownlee)

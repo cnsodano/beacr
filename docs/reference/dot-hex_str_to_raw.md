@@ -36,7 +36,7 @@ integer as the object to hash
 
 ## See also
 
-[.to_raw](https://github.com/cnsodano/beacr-alpha/reference/dot-to_raw.md)
+[.to_raw](https://github.com/cnsodano/beacr/reference/dot-to_raw.md)
 factory function which calls this function when a hex string is detected
 
 ## Examples

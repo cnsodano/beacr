@@ -76,7 +76,7 @@ get_seed(
 - starting_pulse_for_verification:
 
   See
-  [verify_log](https://github.com/cnsodano/beacr-alpha/reference/verify_log.md)
+  [verify_log](https://github.com/cnsodano/beacr/reference/verify_log.md)
   for details
 
 ## Value
@@ -100,7 +100,7 @@ information about the seed request:
   preregistration made prior to requesting a seed. More information
   about preregistrations can be found at the `Preregistration` section
   of the Getting Started vignette
-  [`vignette("beacr")`](https://github.com/cnsodano/beacr-alpha/articles/beacr.md)
+  [`vignette("beacr")`](https://github.com/cnsodano/beacr/articles/beacr.md)
 
 By default this log will be saved to the directory specified by the
 package option "beacr.data_dir_location" which defaults to
@@ -127,6 +127,6 @@ interface.
 
 ## See also
 
-[verify_log](https://github.com/cnsodano/beacr-alpha/reference/verify_log.md)
+[verify_log](https://github.com/cnsodano/beacr/reference/verify_log.md)
 
 ## Examples

@@ -14,4 +14,4 @@ setting global options) and then falling back to package defaults.
 
 ## See also
 
-[`.get_beacon_json()`](https://github.com/cnsodano/beacr-alpha/reference/dot-get_beacon_json.md)
+[`.get_beacon_json()`](https://github.com/cnsodano/beacr/reference/dot-get_beacon_json.md)

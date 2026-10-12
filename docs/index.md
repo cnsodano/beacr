@@ -1,7 +1,7 @@
 # 
 
 Check out the full documentation at the `beacr` package website
-[here](https://cnsodano.github.io/beacr-alpha/)
+[here](https://cnsodano.github.io/beacr/)
 
 `beacr` (pronounced ‘beaker’
 ([/ˈbiːkɚ/](https://speecher.org/?text=beaker))) improves the
@@ -34,7 +34,7 @@ result. Reproduce: Re-running the analysis script re-collects the seed
 used by querying the randomness beacon and the Open Science Framework
 again, reconstructing the random seed, and re-seeding the analysis. Once
 the result is produced and matches the original output, results are
-confirmed.](reference/figures/updated_flowchart.png)](https://github.com/cnsodano/beacr-alpha/reference/figures/updated_flowchart.png)
+confirmed.](reference/figures/updated_flowchart.png)](https://github.com/cnsodano/beacr/reference/figures/updated_flowchart.png)
 
 Typical use cases of `beacr` may be:
 
@@ -61,21 +61,21 @@ directly from GitHub using `pak`(recommended), `remotes`, or
 
 ``` r
 # install.packages("pak")
-pak::pak("cnsodano/beacr-pre-alpha")
+pak::pak("cnsodano/beacr")
 ```
 
 #### remotes
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("cnsodano/beacr-pre-alpha")
+remotes::install_github("cnsodano/beacr")
 ```
 
 #### devtools
 
 ``` r
 # install.packages("devtools")
-devtools::install_github('cnsodano/beacr-pre-alpha')
+devtools::install_github('cnsodano/beacr')
 ```
 
 ## Usage
@@ -90,7 +90,7 @@ set.seed(seed)
 ```
 
 See
-[`vignette("beacr")`](https://github.com/cnsodano/beacr-alpha/articles/beacr.md)
+[`vignette("beacr")`](https://github.com/cnsodano/beacr/articles/beacr.md)
 for more examples of typical usage patterns
 
 ### Preregistrations and Publicly Verifiable random sampling

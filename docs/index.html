@@ -19,7 +19,7 @@
 <meta property="og:title" content="Use truly random publicly auditable seeds">
 <meta name="description" content="Provides utility functions to interact with publicly available randomness beacons. Randomness beacons are secure public services that provide fresh random seeds on a fixed schedule (for example, every minute) allowing you to pre-commit to an outcome that relies on some random process (randomization of clinical trial participants, coin flips, random seeds for machine learning algorithms or cross validation splits, etc...) without knowing what the seed is beforehand. Beacons are also hash-chained, meaning that while you may not know what the random seed is before running your analysis, anyone can verify what the seed was after your analysis is completed.">
 <meta property="og:description" content="Provides utility functions to interact with publicly available randomness beacons. Randomness beacons are secure public services that provide fresh random seeds on a fixed schedule (for example, every minute) allowing you to pre-commit to an outcome that relies on some random process (randomization of clinical trial participants, coin flips, random seeds for machine learning algorithms or cross validation splits, etc...) without knowing what the seed is beforehand. Beacons are also hash-chained, meaning that while you may not know what the random seed is before running your analysis, anyone can verify what the seed was after your analysis is completed.">
-<meta property="og:image" content="https://github.com/cnsodano/beacr-alpha/logo.png">
+<meta property="og:image" content="https://github.com/cnsodano/beacr/logo.png">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -52,7 +52,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
-<li class="nav-item"><a class="nav-link" href="https://github.com/cnsodano/beacr-alpha/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="nav-link" href="https://github.com/cnsodano/beacr/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-lightswitch" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Light switch"><span class="fa fa-sun"></span></button>
   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-lightswitch">
@@ -72,7 +72,7 @@
 <div class="page-header">
 <img src="logo.png" class="logo" alt=""><h1 id="section"><a class="anchor" aria-label="anchor" href="#section"></a></h1>
 </div>
-<p>Check out the full documentation at the <code>beacr</code> package website <a href="https://cnsodano.github.io/beacr-alpha/" class="external-link">here</a></p>
+<p>Check out the full documentation at the <code>beacr</code> package website <a href="https://cnsodano.github.io/beacr/" class="external-link">here</a></p>
 <p><code>beacr</code> (pronounced ‘beaker’ (<a href="https://speecher.org/?text=beaker" class="external-link">/ˈbiːkɚ/</a>)) improves the transparency of analyses that use randomness in any form by providing a random number generator that can be publicly audited after-the-fact.</p>
 <p><code>beacr</code> takes its name from the concept of <strong>randomness beacons</strong>, which are secure public services that provide fresh random seeds on a fixed schedule (for example, every minute). These beacons make it possible to preregister an expected outcome that relies on some random process <strong>without knowing what the seed for that random process is beforehand</strong>. Beacons are also hash-chained, meaning that while you may not know what the random seed is before running your analysis, anyone can verify what the seed was after your analysis is completed.</p>
 <p>A pipeline that uses <code>beacr</code> to report the results of analyses using <strong>verifiably random seeds</strong> may look like this:</p>
@@ -100,21 +100,21 @@
 </h4>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"cnsodano/beacr-pre-alpha"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"cnsodano/beacr"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level4">
 <h4 id="remotes">remotes<a class="anchor" aria-label="anchor" href="#remotes"></a>
 </h4>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"cnsodano/beacr-pre-alpha"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"cnsodano/beacr"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level4">
 <h4 id="devtools">devtools<a class="anchor" aria-label="anchor" href="#devtools"></a>
 </h4>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">'cnsodano/beacr-pre-alpha'</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">'cnsodano/beacr'</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
@@ -124,7 +124,7 @@
 <h3 id="typical-usage-pattern">Typical usage pattern<a class="anchor" aria-label="anchor" href="#typical-usage-pattern"></a>
 </h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/cnsodano/beacr-alpha">beacr</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/cnsodano/beacr">beacr</a></span><span class="op">)</span></span>
 <span><span class="va">seed</span> <span class="op">=</span> <span class="fu">beacr</span><span class="fu">::</span><span class="fu"><a href="reference/get_seed.html">get_seed</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="va">seed</span><span class="op">)</span></span>
 <span><span class="co"># Continue with reproducible random processes...</span></span></code></pre></div>
@@ -136,7 +136,7 @@
 <p>Generating a random seed is great, but the real strength of <code>beacr</code> lies in verifying that the seed was, in fact, random. <code>beacr</code> does this using preregistrations. A preregistration is a public statement made prior to engaging in an activity that outlines how you will engage in that activity (the protocol) and what your anticipated outcomes are (the hypothesis). Preregistration of scientific experiments, for example, supports verifying after-the-fact whether the protocol was followed or not, and whether the results of that experiment support the researcher’s initial hypothesis.</p>
 <p><code>beacr</code> makes preregistering the random seed selection process simple. Pass in a link to an file uploaded to an Open Science Framework (OSF) registration and <code>beacr</code> will perform a verification check that covers the timestamp and file integrity of that registration.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/cnsodano/beacr-alpha">beacr</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/cnsodano/beacr">beacr</a></span><span class="op">)</span></span>
 <span><span class="va">seed</span> <span class="op">=</span> <span class="fu">beacr</span><span class="fu">::</span><span class="fu"><a href="reference/get_seed.html">get_seed</a></span><span class="op">(</span></span>
 <span>  preregistration_identifier <span class="op">=</span> <span class="st">"https://osf.io/yrp3f/files/4gzvx"</span>,</span>
 <span>  preregistration_source <span class="op">=</span> <span class="st">"OSF"</span></span>
@@ -165,7 +165,7 @@ To keep in line with language familiar to my intended audience for this package,
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/cnsodano/beacr-alpha/">Browse source code</a></li>
+<li><a href="https://github.com/cnsodano/beacr/">Browse source code</a></li>
 </ul>
 </div>
 

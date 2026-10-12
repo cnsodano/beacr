@@ -5,7 +5,7 @@ articles:
   beacons: beacons.html
   beacr: beacr.html
   hash_functions: hash_functions.html
-last_built: 2026-10-11T21:25Z
+last_built: 2026-10-12T15:05Z
 urls:
-  reference: https://github.com/cnsodano/beacr-alpha/reference
-  article: https://github.com/cnsodano/beacr-alpha/articles
+  reference: https://github.com/cnsodano/beacr/reference
+  article: https://github.com/cnsodano/beacr/articles

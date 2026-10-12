@@ -11,4 +11,4 @@ Beacon
 
 ## See also
 
-[`.get_beacon_defaults()`](https://github.com/cnsodano/beacr-alpha/reference/dot-get_beacon_defaults.md)
+[`.get_beacon_defaults()`](https://github.com/cnsodano/beacr/reference/dot-get_beacon_defaults.md)

@@ -10,21 +10,21 @@ directly from GitHub using `pak`(recommended), `remotes`, or
 
 ``` r
 # install.packages("pak")
-pak::pak("cnsodano/beacr-pre-alpha")
+pak::pak("cnsodano/beacr")
 ```
 
 #### remotes
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("cnsodano/beacr-pre-alpha")
+remotes::install_github("cnsodano/beacr")
 ```
 
 #### devtools
 
 ``` r
 # install.packages("devtools")
-devtools::install_github('cnsodano/beacr-pre-alpha')
+devtools::install_github('cnsodano/beacr')
 ```
 
 ## Using `beacr`
@@ -40,7 +40,7 @@ set.seed(seed)
 ```
 
 When
-[`get_seed()`](https://github.com/cnsodano/beacr-alpha/reference/get_seed.md)
+[`get_seed()`](https://github.com/cnsodano/beacr/reference/get_seed.md)
 is called, a seed log is written that captures the details of the seed
 that was returned based on the beacon(s) used.
 
@@ -48,11 +48,11 @@ that was returned based on the beacon(s) used.
 # Acquire seed
 seed = beacr::get_seed()
 #> ℹ Did not detect a seed log file. Writing one to
-#>   `/tmp/RtmpJQZt37/PROJ_ROOT/beacr/seed_log.json`
+#>   `/tmp/RtmpxslWW8/PROJ_ROOT/beacr/seed_log.json`
 #> ✖ No preregistration identifier passed, using pulse without preregistration.
 #>   See the 'Preregistration' section in the Getting Started vignette for more
 #>   details: `vignette('beacr')`
-#> ✔ Pulse successfully acquired. Details written to log at /tmp/RtmpJQZt37/PROJ_ROOT/beacr/seed_log.json
+#> ✔ Pulse successfully acquired. Details written to log at /tmp/RtmpxslWW8/PROJ_ROOT/beacr/seed_log.json
 ```
 
 After acquiring a random seed, you can use it for reproducible analyses
@@ -65,8 +65,8 @@ set.seed(seed)
 # Use reproducible seed
 random_draws <- rnorm(10)
 random_draws
-#>  [1]  1.06512533  0.13288118 -0.03404401 -0.04497635  3.33783786 -0.39291753
-#>  [7]  0.41056602 -0.56218543  1.19122666  0.34906816
+#>  [1]  2.1378035  0.2721635 -0.6747989  1.7824071 -0.1249870 -1.4387338
+#>  [7] -1.5062909 -0.1593448 -0.7046449 -0.4007515
 ```
 
 Then when you rerun the same code, `beacr` will read from the seed log
@@ -76,7 +76,7 @@ to reproduce the same output.
 # Acquire seed (automatically reproduces previous seed acquired)
 seed_reproduced = beacr::get_seed()
 #> ℹ Detected seed log file at path
-#>   `/tmp/RtmpJQZt37/PROJ_ROOT/beacr/seed_log.json`, reading from that file
+#>   `/tmp/RtmpxslWW8/PROJ_ROOT/beacr/seed_log.json`, reading from that file
 #>   (**NOT** generating new seeds). Call `reset_seed_log()` to purge this file
 #>   and generate new seeds
 #> ℹ Verifying the logged pulse can be recreated...
@@ -107,8 +107,8 @@ print(glue::glue(
 # Use reproducible seed
 random_draws_reproduced <- rnorm(10)
 random_draws_reproduced
-#>  [1]  1.06512533  0.13288118 -0.03404401 -0.04497635  3.33783786 -0.39291753
-#>  [7]  0.41056602 -0.56218543  1.19122666  0.34906816
+#>  [1]  2.1378035  0.2721635 -0.6747989  1.7824071 -0.1249870 -1.4387338
+#>  [7] -1.5062909 -0.1593448 -0.7046449 -0.4007515
 print(glue::glue(
   "Are the random numbers drawn after seeding identical?: {identical(random_draws, random_draws_reproduced)}"
 ))
@@ -133,7 +133,7 @@ reproduce the most recent seed generated from a Beacon. This is not to
 be confused with the `beacr` **debug log** which is a typical `.log`
 file retracing all messages, warnings, and errors that occurred during
 code execution and can be viewed by calling
-[`read_logs()`](https://github.com/cnsodano/beacr-alpha/reference/read_logs.md)
+[`read_logs()`](https://github.com/cnsodano/beacr/reference/read_logs.md)
 
 ## Pre-registration
 
@@ -201,7 +201,7 @@ that you may have already written in prior testing like so:
 
 ``` r
 reset_seed_log(yes_to_all = TRUE) 
-#> ! Deleting all files in /tmp/RtmpJQZt37/PROJ_ROOT/beacr
+#> ! Deleting all files in /tmp/RtmpxslWW8/PROJ_ROOT/beacr
 ```
 
 Then continue by passing a preregistration identifier and source.
@@ -222,7 +222,7 @@ seed = beacr::get_seed(
   preregistration_source = "OSF"
 )
 #> ℹ Did not detect a seed log file. Writing one to
-#>   `/tmp/RtmpJQZt37/PROJ_ROOT/beacr/seed_log.json`
+#>   `/tmp/RtmpxslWW8/PROJ_ROOT/beacr/seed_log.json`
 #> ℹ Using preregistration value with
 #>   identifier:`https://osf.io/mbcw5/files/yahfc` from source: `OSF`
 #> ! Validating the identifier passed to .get_preregistration_OSF() is not yet
@@ -240,7 +240,7 @@ seed = beacr::get_seed(
 #> ✔ Hash value reported by OSF's API matches the hash value of the actual file available for download from OSF
 #> ℹ View source of preregistration value at:
 #>   `https://osf.io/mbcw5/files/osfstorage/686faff93ef3be547af6d5a8`
-#> ✔ Pulse successfully acquired. Details written to log at /tmp/RtmpJQZt37/PROJ_ROOT/beacr/seed_log.json
+#> ✔ Pulse successfully acquired. Details written to log at /tmp/RtmpxslWW8/PROJ_ROOT/beacr/seed_log.json
 ```
 
 Once acquired, use the seed in the same way as you would without a
@@ -253,8 +253,8 @@ set.seed(seed)
 # Use reproducible seed
 random_draws = rnorm(10)
 random_draws
-#>  [1]  0.1805229  0.7847340 -1.3531646  1.9832982  1.2384717  1.2006174
-#>  [7]  0.8961499  0.2536898  0.5496003  1.9033711
+#>  [1] -1.63677655 -0.05333565 -2.13977793 -0.25331433  0.04289161 -1.24954815
+#>  [7]  0.34899585 -0.20750010  0.55481987 -1.03463089
 ```
 
 Every subsequent call to `get_seed` will reproduce the Beacon pulse with
@@ -279,7 +279,7 @@ seed_reproduced = beacr::get_seed(
   preregistration_source = "OSF"
 )
 #> ℹ Detected seed log file at path
-#>   `/tmp/RtmpJQZt37/PROJ_ROOT/beacr/seed_log.json`, reading from that file
+#>   `/tmp/RtmpxslWW8/PROJ_ROOT/beacr/seed_log.json`, reading from that file
 #>   (**NOT** generating new seeds). Call `reset_seed_log()` to purge this file
 #>   and generate new seeds
 #> ℹ Verifying the logged pulse can be recreated...
@@ -287,6 +287,11 @@ seed_reproduced = beacr::get_seed(
 #> ℹ Verifying the chain integrity of the logged pulse...
 #> ! When verifying chain integrity of logged pulse, no starting pulse was passed.
 #>   Starting chain verification with the latest pulse from its chain
+#> ℹ Historical pulse being verified was apparently issued 0 years, 0 months, 0
+#>   days, 0 hours, and 1 minutes ago...
+#> ! Will have to perform approximately 1 API calls to verify the chain...at
+#>   around 0.5s per call, this will take approximately 0.5s
+#> ✔ The beacon pulse logged is on a consistent chain of pulses
 #> ✔ Successfully verified chain integrity of logged pulse!
 #> ℹ Detected a preregistration message in log.
 #> ✔ Random seed logged is consistent with the logged preregistration and logged beacon pulse value...
@@ -323,8 +328,8 @@ print(glue::glue(
 # Use reproducible seed
 random_draws_reproduced <- rnorm(10)
 random_draws_reproduced
-#>  [1]  0.1805229  0.7847340 -1.3531646  1.9832982  1.2384717  1.2006174
-#>  [7]  0.8961499  0.2536898  0.5496003  1.9033711
+#>  [1] -1.63677655 -0.05333565 -2.13977793 -0.25331433  0.04289161 -1.24954815
+#>  [7]  0.34899585 -0.20750010  0.55481987 -1.03463089
 print(glue::glue(
   "Are the random numbers drawn after seeding identical?: {identical(random_draws, random_draws_reproduced)}"
 ))

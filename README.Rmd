@@ -36,17 +36,17 @@ Currently, `beacr` is not yet available on CRAN. Install `beacr` directly from G
 #### pak
 ```{.r}
 # install.packages("pak")
-pak::pak("cnsodano/beacr-alpha")
+pak::pak("cnsodano/beacr")
 ```
 #### remotes
 ```{.r}
 # install.packages("remotes")
-remotes::install_github("cnsodano/beacr-alpha")
+remotes::install_github("cnsodano/beacr")
 ```
 #### devtools
 ```{.r}
 # install.packages("devtools")
-devtools::install_github('cnsodano/beacr-alpha')
+devtools::install_github('cnsodano/beacr')
 ```
 
 ## Usage

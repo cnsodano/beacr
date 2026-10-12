@@ -21,7 +21,7 @@
       "Welcome to `",
       pkgname,
       "`! This message appears only once.\n",
-      "Visit https://cnsodano.github.io/beacr-pre-alpha/ to learn more about how to use `beacr` and access in-depth documentation. You can also read the vignettes that explain common use cases.\n",
+      "Visit https://cnsodano.github.io/beacr/ to learn more about how to use `beacr` and access in-depth documentation. You can also read the vignettes that explain common use cases.\n",
       "A good place to get started is by executing `vignette('beacr')` in your R console.\n",
       "If you want to learn more, check out other vignettes with `browseVignettes(package='beacr')`\n"
     )

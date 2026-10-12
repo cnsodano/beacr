@@ -1,4 +1,4 @@
-url: https://github.com/cnsodano/beacr-alpha/
+url: https://github.com/cnsodano/beacr/
 template:
   bootstrap: 5
   includes:
@@ -41,13 +41,6 @@ toc:
 home:
   sidebar:
     structure: [links, license, community, citation, authors, dev, toc]
-  # links:
-  # - text: GitHub
-  #   link: https://github.com/cnsodano/beacr-pre-alpha
-  # # - text: Vignettes
-  # #   href: /articles/
-  # # - text: API Reference
-  # #   href: /reference/
 
 reference:
   - title: "Core Functions"

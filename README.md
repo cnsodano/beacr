@@ -1,6 +1,6 @@
 
 # <img src="man/figures/logo.png" height="120" />
-Check out the full documentation at the `beacr` package website [here](https://cnsodano.github.io/beacr-alpha/)
+Check out the full documentation at the `beacr` package website [here](https://cnsodano.github.io/beacr/)
 
 `beacr` (pronounced ‘beaker’
 ([/ˈbiːkɚ/](https://speecher.org/?text=beaker))) improves the
@@ -56,21 +56,21 @@ directly from GitHub using `pak`(recommended), `remotes`, or
 
 ``` r
 # install.packages("pak")
-pak::pak("cnsodano/beacr-pre-alpha")
+pak::pak("cnsodano/beacr")
 ```
 
 #### remotes
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("cnsodano/beacr-pre-alpha")
+remotes::install_github("cnsodano/beacr")
 ```
 
 #### devtools
 
 ``` r
 # install.packages("devtools")
-devtools::install_github('cnsodano/beacr-pre-alpha')
+devtools::install_github('cnsodano/beacr')
 ```
 
 ## Usage
